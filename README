@@ -1,4 +1,7 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=614
+This is a modified version of CRefVim to make it workable with exVim. 
+
+The <Leader>cw, <Leader>cc has conflict map with NERDComment and seldom used.
+So I disable these two mappings.
 
 The intention of this project is to provide a C-reference manual that can
 be viewed with Vim and accessed from within Vim. 
@@ -13,6 +16,9 @@ to view help:
                            Memory aid cr: (c)-(r)eference
   <Leader>cr visual mode:  get help for visually selected text
                            Memory aid cr: (c)-(r)eference
+
+Disabled:
+
   <Leader>cw:              prompt for word CRefVim should search for
                            Memory aid cw: (c)-reference (w)hat
   <Leader>cc:              jump to table of contents of the C-reference manual

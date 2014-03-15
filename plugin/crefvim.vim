@@ -63,12 +63,15 @@ endif
 if !hasmapto('<Plug>CRV_CRefVimNormal')
     nmap <silent> <unique> <Leader>cr <Plug>CRV_CRefVimNormal
 endif
-if !hasmapto('<Plug>CRV_CRefVimAsk')
-    map <silent> <unique> <Leader>cw <Plug>CRV_CRefVimAsk
-endif
-if !hasmapto('<Plug>CRV_CRefVimInvoke')
-    map <silent> <unique> <Leader>cc <Plug>CRV_CRefVimInvoke
-endif
+
+" DISABLE(jwu)
+" if !hasmapto('<Plug>CRV_CRefVimAsk')
+"     map <silent> <unique> <Leader>cw <Plug>CRV_CRefVimAsk
+" endif
+" if !hasmapto('<Plug>CRV_CRefVimInvoke')
+"     " MODIFY(jwu): \cc conflict with lots of other plugins
+"     map <silent> <unique> <Leader>cc <Plug>CRV_CRefVimInvoke
+" endif
 
 vmap <silent> <unique> <script> <Plug>CRV_CRefVimVisual  y:call <SID>CRV_CRefVimWord('<c-r>"')<CR>
 nmap <silent> <unique> <script> <Plug>CRV_CRefVimNormal   :call <SID>CRV_CRefVimWord(expand("<cword>"))<CR>
