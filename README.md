@@ -45,10 +45,12 @@ to view help:
 - `<Leader>cr` normal mode:  get help for word under cursor.
 - `<Leader>cr` visual mode:  get help for visually selected text.
 
-**Note:** by default <Leader> is \, e.g. press \cr to invoke C-reference
+**Note:** by default `<Leader>` is \, e.g. press `\cr` to invoke C-reference
+
 **Note:** The best way to search for an operator (++, --, %, ...) is to visually select it and press <Leader>cr.
 
 To get help do :help crefvimdoc
+
 To show the C-reference manual do :help crefvim
 
 ## Changes for exVim
